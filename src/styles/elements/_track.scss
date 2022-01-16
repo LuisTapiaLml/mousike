@@ -1,0 +1,96 @@
+
+.tracks-container{
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    // border: 1px solid $border-color;
+    box-shadow: 3px 3px 3px #d1d1d1 , -1px -1px 2px #d1d1d1;
+  }
+  
+  .track{
+    display: flex;
+    height: 50px;
+    padding: 2px 5px;
+    border-radius:3px;
+    background-color: #fff;
+    box-shadow:2px 2px 2px #d1d1d1;
+    margin: 5px 0px;
+    overflow: hidden;
+    // min-width: 220px;
+    
+    &.playing{
+      background-color: lighten($color: $logo-color, $amount: 5);
+    }
+
+    img{
+      display: block;
+      
+      min-height: 45px;
+      min-width: 45px;
+      height: 45px!important;
+      width: 45px!important;
+      margin-right: 10px;
+    }
+    
+    .buttons{
+      width: 45px;
+      border-right: 1px solid #d1d1d1;
+      margin-right: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $link-color;
+      .icon{
+        cursor: pointer;
+        
+        &:hover{
+          color: lighten($color: $link-color, $amount: 5);
+        }
+      }
+    }
+    
+    .info{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: calc( 100% - 45px );
+      height: 100%;
+      *{
+        color: $link-color;
+        white-space:nowrap;
+        overflow:hidden;
+      }
+      .band-info{
+        display: flex;
+       
+      }
+      
+    }
+    
+    p{
+      font-size:14px;
+      &:last-child{
+        color: lighten($color: $link-color, $amount: 10);
+        font-size:12px;
+      }
+    }
+    .track-description{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+    }
+    
+  
+    .duration{
+      margin: 0px 5px;
+      font-size:13px;
+    }
+  }
+
+
+@media (max-width: 780px){
+  .duration{
+    display: none;
+  }
+}

@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {
+  BrowserRouter,
+  BrowserRouter as Router,
+} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Header } from './components/layout/Header';
+import { Sidebar } from './components/layout/Sidebar';
+import { Main } from './components/layout/Main';
+
+import './styles/mousike.scss';
+import { AudioState } from './context/audio/AudioState';
+import { Player } from './components/layout/Player';
+
+export const App = () => {
+  return ( 
+    <AudioState>
+      <BrowserRouter>
+        <div className="principal_container">
+          <Header/>
+          <div className="secondary_container">
+            <Sidebar/>
+            <Main/>
+          </div>
+          <Player/>
+        </div>
+      </BrowserRouter>
+    </AudioState>
+  )
 }
-
-export default App;

@@ -1,0 +1,51 @@
+
+
+
+svg.playing_animation{
+      /* .animation-none {
+       animation: none;
+  } */
+  rect {
+    /*   fill: ; */
+      animation: updown .75s infinite linear;
+      transform-origin: 0 50%;
+      transform: scaleY(.5);    
+    }
+    rect:nth-child(1) {
+      animation-delay:.05s;
+    }
+    rect:nth-child(2) {
+      animation-delay:.075s;
+      animation-duration: .65s;
+    }
+    rect:nth-child(3) {
+      animation-delay:.10s;
+      animation-duration: .75s;
+    }
+    rect:nth-child(4) {
+      animation-delay:.125s;
+      animation-duration: .75s;
+    }
+    rect:nth-child(5) {
+      animation-delay:.15s;
+      animation-duration: .85s;
+      
+    }
+}
+  
+@keyframes updown {  
+    0% {
+      transform: scaleY(.5);
+    }
+   
+    50% {
+      transform: scaleY(1);
+    }
+   
+    100% {
+      transform: scaleY(.5);
+    }
+}
+  
+  
+  

@@ -1,0 +1,127 @@
+.palylists-container{
+    // display: grid;
+    // grid-template-columns: repeat(5 , 1fr);
+    // column-gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    grid-gap: 20px;
+    width: 100%;
+    // justify-content: space-between; /* 4 */
+
+    h1{
+        width: 100%;
+    }
+
+    &::after {
+        content: "";
+        flex: auto;
+    }
+
+}
+
+.playlist-preview{
+    margin: 0 15px 25px 0;
+
+    // &:last-child{
+    //     justify-self: start;
+    // }
+
+
+    p , .nombre{
+        font-size: 14px;
+
+        &:last-child{
+            font-size: 13px;
+            color: lighten($color: $primary-color, $amount: 20);
+        }
+    }
+
+    .img-container{
+        position: relative;
+        width: 100%;
+
+        img{
+            border-radius: 3px;
+            box-shadow: 2px 2px 2px #d1d1d1;
+            width: 100%;
+            // display: block;
+            pointer-events: none;
+            text-decoration: none !important;
+            outline: none;
+            display: block;
+        }
+
+        .cover{
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 10;
+
+            &.playing{
+                background-color: rgba(0,0,0,.4);
+            }
+        }
+
+        .play{
+            position: absolute;
+            cursor: pointer;
+            bottom: 10px;
+            left: 8px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 6px 0px;
+            
+            font-size: 12px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            width: 36px;
+            transition-duration: 0.15s;
+            transition-property: opacity, transform, -webkit-transform;
+            border-radius: 50%;
+
+            .icon{
+                color: #121216;
+            }
+
+            &:hover{
+                transform: scale3d(1.2, 1.2, 1.2);
+            }
+
+        }
+    }
+    
+}
+
+.page-header{
+    display: flex;
+
+    .image-container img{
+        border-radius: 5px;
+    }
+
+    .info-playlist{
+        padding: 10px;
+    }
+}
+
+
+@media (max-width:780px){
+
+    .palylists-container{
+        
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    }
+    .page-header{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+}

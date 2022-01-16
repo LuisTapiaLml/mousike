@@ -1,0 +1,48 @@
+@import './variables';
+@import './reset';
+@import './layout/header';
+@import './layout/aside';
+@import './layout/main';
+
+@import './elements/track';
+
+@import './elements/player';
+
+@import './elements/playlists';
+
+@import './elements/playing_animation';
+
+$margin-top : 8px;
+
+.logo{
+    font-family: $logo-font;
+    color: $logo-color;
+    font-size: 28px;
+}
+
+.principal_container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.secondary_container{
+    margin-top: $margin-top;
+    display: flex;
+    height: calc( 100% - ( #{$header-height} + #{$margin-top} ) );
+    width: 100%;
+    padding-bottom: 75px;
+}
+
+.container{
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 3px 3px 3px #d1d1d1 , -1px -1px 2px #d1d1d1;
+}
+
+@media (max-width : 780px ){
+    .container{
+        padding: 5px;
+    }
+}

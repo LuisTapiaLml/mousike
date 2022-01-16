@@ -1,0 +1,35 @@
+$primary-color: #1c1a41;
+$link-color: #B9B9D4;
+$link-color: #807FC3;
+$link-color: #5F73D1;
+
+$background-color: #F7FBFD;
+$border-color : #f7fbfd;
+
+$aside-background-color : #FBFFFF;
+$aside-background-color : #fff;
+$aside-with : 200px; 
+
+$header-height : 55px; 
+
+
+@font-face{
+    src: url("../fonts/Rubik/static/Rubik-Regular.ttf");
+    font-family: 'Rubik';
+}
+
+@font-face{
+    src: url("../fonts/permanent-marker/PermanentMarker-Regular.ttf");
+    font-family: 'permanent maker';
+}
+
+$font : Rubik;
+$logo-font :'Permanent maker';
+$logo-color: #F9B9B9;
+
+
+// mobile variables
+
+$aside-mobile-with : 50px; 
+$header-mobile-height : 55px; 
+

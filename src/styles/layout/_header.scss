@@ -1,0 +1,17 @@
+.principal-header{
+    width: 100%;
+    height: $header-height;
+
+    background-color: white;
+    border-right: 1px solid $aside-background-color;
+    box-shadow: 2px 2px 2px #dddddd;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    >*{
+        padding: 15px;
+    }
+}
