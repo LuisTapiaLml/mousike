@@ -7,7 +7,7 @@ export const Header = () => {
             <Link className="logo" to="/">
                 Mousike
             </Link>
-            <Link to="/Profile" >Log In</Link>
+            {/* <Link to="/Profile" >Log In</Link> */}
         </header>
     )
 }

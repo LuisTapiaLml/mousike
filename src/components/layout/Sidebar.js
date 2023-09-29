@@ -10,8 +10,8 @@ export const Sidebar = () => {
             <nav>
 
                 <NavLink className="nav-link" to="/" > <FaLongArrowAltUp  className="icon" /> <span>Top Music</span> </NavLink>
-                <NavLink className="nav-link" to="/podcast" > <FaMicrophone className="icon"/> <span>Podcast</span> </NavLink>
-                <NavLink className="nav-link" to="/genre" > <FaMusic className="icon"/> <span>Genre</span> </NavLink>
+                {/* <NavLink className="nav-link" to="/podcast" > <FaMicrophone className="icon"/> <span>Podcast</span> </NavLink>
+                <NavLink className="nav-link" to="/genre" > <FaMusic className="icon"/> <span>Genre</span> </NavLink> */}
                 <NavLink className="nav-link" to="/playlist" > <FaList className="icon"/> <span>Playlist</span> </NavLink>                <span className="line"></span>
             </nav>
             <footer>
