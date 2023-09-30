@@ -8,7 +8,7 @@ const instance = axios.create({
     //             "Access-Control-Allow-Origin": "*",
     //             // 'origin': 'x-requested-with'
     //         },
-    withCredentials:true
+    // withCredentials:true
 
 });
 // console.log(process.env.BASE_URL);
