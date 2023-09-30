@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const instance = axios.create({
     
-    baseURL: "http://localhost:9001/https://api.deezer.com",
+    baseURL: "http://127.0.0.1:9001/https://api.deezer.com",
     // baseURL: "https://api.deezer.com",
     // headers: {
     //             "Access-Control-Allow-Origin": "*",
